@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import "../styles/style.css"
+import "../styles/components.css"
 
 class General extends Component {
     constructor() {
@@ -10,6 +11,7 @@ class General extends Component {
             lastName: "",
             email: "",
             phone: "",
+            location: "",
             about: "",
             editMode: true,
         }
@@ -80,7 +82,7 @@ class General extends Component {
                         type="text"
                         placeholder="City, State"
                         name="location"
-                        value={location}
+                        value={window.location}
                         onChange={this.handleChange}
                         required
                     ></input>
@@ -109,7 +111,7 @@ class General extends Component {
                     <p>|</p>
                     <p>{phone}</p>
                     <p>|</p>
-                    <p>{location}</p>
+                    <p>{window.location}</p>
                 </div>
                 <div className="about">
                     <h4>ABOUT ME</h4>
