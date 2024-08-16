@@ -125,3 +125,5 @@ class General extends Component {
         )
     }
 }
+
+export default General;
