@@ -35,6 +35,8 @@ class General extends Component {
 
     render() {
         const {firstName, lastName, email, phone, about, editMode} = this.setState;
+        const editButton = <button onClick={this.handleEdit} className="edit-button">EDIT</button>;
+        const submitButton = <button type="submit" className="submit-button">SUBMIT</button>;
 
         const editContent = (
             <div>
