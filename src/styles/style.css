@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.general-div>.edit-button {
+    top: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .general-div>.edit-button {
+        top: 85px;
+    }
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.edit-button {
+    background-color: #dd7505;
+    position: absolute;
+    right: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.edit-button:hover,
+.submit-button:hover {
+    background-color: #ffba08;
+}
+
+hr {
+    height: 2px;
+    background-color: #192f4d;
+    border: none;
+}
